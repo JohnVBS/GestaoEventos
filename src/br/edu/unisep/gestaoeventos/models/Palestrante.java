@@ -40,6 +40,9 @@ public class Palestrante {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Palestrante\n" +
+                "Nome: " + this.nome + "\n" +
+                "Idade: " + this.idade + "\n" +
+                "Email: " + this.email;
     }
 }

@@ -1,7 +1,7 @@
 package br.edu.unisep.gestaoeventos.models;
 
 public class Inscricao {
-    private int preco;
+    private float preco;
 
     public Inscricao() {
     }
@@ -10,7 +10,7 @@ public class Inscricao {
         this.preco = preco;
     }
 
-    public int getPreco() {
+    public float getPreco() {
         return preco;
     }
 
@@ -20,6 +20,10 @@ public class Inscricao {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Inscricao\n" +
+                "Preco: " + this.preco;
+    }
+
+    public void setPreco(float preco) {
     }
 }

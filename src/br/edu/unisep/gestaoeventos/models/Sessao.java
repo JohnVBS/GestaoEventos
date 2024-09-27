@@ -1,5 +1,6 @@
 package br.edu.unisep.gestaoeventos.models;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Sessao {
@@ -42,6 +43,10 @@ public class Sessao {
 
     @Override
     public String toString() {
-        return super.toString();
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss dd/MM/yyyy");
+        return "Sessao\n" +
+                "Dia: " + this.dia + "\n" +
+                "Horario: " + sdf.format(this.horario.getTime()) + "\n" +
+                "Numero de participantes: " + this.num_participantes ;
     }
 }

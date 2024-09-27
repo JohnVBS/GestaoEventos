@@ -1,5 +1,7 @@
 package br.edu.unisep.gestaoeventos.models;
 
+import java.text.SimpleDateFormat;
+
 public class Participante {
     private String nome;
     private int idade;
@@ -60,6 +62,11 @@ public class Participante {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Participante\n" +
+                "Nome: " + this.nome + "\n" +
+                "Idade: " + this.idade + "\n" +
+                "CPF: " + this.cpf + "\n" +
+                "Email: " + this.email + "\n" +
+                "Cidade: " + this.cidade;
     }
 }

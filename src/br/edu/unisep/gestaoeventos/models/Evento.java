@@ -2,7 +2,7 @@ package br.edu.unisep.gestaoeventos.models;
 
 public class Evento {
     private String local;
-    private int dias;
+    private int dia;
     private int num_ingressos;
 
     public Evento() {
@@ -10,7 +10,7 @@ public class Evento {
 
     public Evento(String local, int dias, int num_ingressos) {
         this.local = local;
-        this.dias = dias;
+        this.dia = dias;
         this.num_ingressos = num_ingressos;
     }
 
@@ -22,12 +22,12 @@ public class Evento {
         this.local = local;
     }
 
-    public int getDias() {
-        return dias;
+    public int getDia() {
+        return dia;
     }
 
-    public void setDias(int dias) {
-        this.dias = dias;
+    public void setDia(int dias) {
+        this.dia = dias;
     }
 
     public int getNum_ingressos() {
@@ -40,6 +40,9 @@ public class Evento {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Evento\n" +
+                "Local: " + this.local + "\n" +
+                "Dia: " + this.dia + "\n" +
+                "Numero de ingressos: " + this.num_ingressos;
     }
 }
